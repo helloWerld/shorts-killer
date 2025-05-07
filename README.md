@@ -2,8 +2,6 @@
 
 A Chrome extension to help you avoid the endless scroll of short-form content. When you click on a short-form video (like YouTube Shorts, Instagram Reels, etc.), the extension redirects you to a more productive destination.
 
-![Shorts Killer](https://raw.githubusercontent.com/username/shorts-killer/main/screenshots/banner.png)
-
 ## Features
 
 - 🎯 **Multi-Platform Support**
@@ -35,7 +33,7 @@ A Chrome extension to help you avoid the endless scroll of short-form content. W
 1. Clone this repository or download the ZIP file
 
 ```bash
-git clone https://github.com/username/shorts-killer.git
+git clone https://github.com/hellowerld/shorts-killer.git
 ```
 
 2. Open Chrome and navigate to `chrome://extensions/`
