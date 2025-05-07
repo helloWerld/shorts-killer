@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shorts Killer Settings</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-gradient">Settings</h1>
+
+      <!-- Platform Settings Section -->
+      <div class="settings-section">
+        <h2 class="section-title">Platform Settings</h2>
+        <p class="section-description">
+          Choose which platforms to block short-form content on.
+        </p>
+        <form id="platform-form">
+          <div class="platform-toggle">
+            <input type="checkbox" id="youtube" name="YouTube Shorts" />
+            <label for="youtube">YouTube Shorts</label>
+          </div>
+          <div class="platform-toggle">
+            <input type="checkbox" id="facebook" name="Facebook Reels" />
+            <label for="facebook">Facebook Reels</label>
+          </div>
+          <div class="platform-toggle">
+            <input type="checkbox" id="instagram" name="Instagram Shorts" />
+            <label for="instagram">Instagram Shorts</label>
+          </div>
+          <div class="platform-toggle">
+            <input type="checkbox" id="tiktok" name="TikTok" />
+            <label for="tiktok">TikTok</label>
+          </div>
+          <div class="platform-toggle">
+            <input type="checkbox" id="twitter" name="Twitter/X" />
+            <label for="twitter">Twitter/X</label>
+          </div>
+          <div class="platform-toggle">
+            <input type="checkbox" id="snapchat" name="Snapchat Spotlight" />
+            <label for="snapchat">Snapchat Spotlight</label>
+          </div>
+          <div class="platform-toggle">
+            <input type="checkbox" id="linkedin" name="LinkedIn Feed" />
+            <label for="linkedin">LinkedIn Feed</label>
+          </div>
+          <div class="platform-toggle">
+            <input type="checkbox" id="pinterest" name="Pinterest Idea Pins" />
+            <label for="pinterest">Pinterest Idea Pins</label>
+          </div>
+          <div class="platform-toggle">
+            <input type="checkbox" id="reddit" name="Reddit Shorts" />
+            <label for="reddit">Reddit Shorts</label>
+          </div>
+          <button type="submit" class="btn">Save Platform Settings</button>
+          <div id="status" class="status-message"></div>
+        </form>
+      </div>
+
+      <!-- Redirect Settings Section -->
+      <div class="settings-section">
+        <h2 class="section-title">Redirect Settings</h2>
+        <p class="section-description">
+          Configure where you'll be redirected when accessing short-form
+          content.
+        </p>
+        <div class="custom-redirect-section">
+          <div class="input-group">
+            <label for="custom-redirect-url">Custom Redirect URL</label>
+            <input
+              type="text"
+              id="custom-redirect-url"
+              placeholder="https://example.com"
+              class="text-input"
+            />
+          </div>
+          <div class="button-group">
+            <button id="save-redirect-url" class="btn" type="button">
+              Save Redirect URL
+            </button>
+            <button id="test-redirect-url" class="btn" type="button">
+              Test Redirect
+            </button>
+          </div>
+          <div id="redirect-status" class="status-message"></div>
+          <div class="current-redirect">
+            <span class="current-redirect-label">Current Redirect:</span>
+            <a
+              id="current-redirect-url"
+              href="#"
+              target="_blank"
+              class="current-redirect-value"
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="settings.js"></script>
+  </body>
+</html>

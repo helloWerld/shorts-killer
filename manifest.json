@@ -1,0 +1,13 @@
+{
+  "name": "Short Killer",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "index.html"
+  },
+  "permissions": ["tabs", "storage", "history"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  }
+}
